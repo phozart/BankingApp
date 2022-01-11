@@ -1,9 +1,21 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+
 function Spa() {
+  const Route = ReactRouterDOM.Route;
+  const Link = ReactRouterDOM.Link;
+  const HashRouter = ReactRouterDOM.HashRouter;
+
   return (
     <HashRouter>
       <NavBar/>
-      <UserContext.Provider value={{users:[{name:'abel',email:'abel@mit.edu',password:'secret',balance:100}]}}>
+
         <div className="container" style={{padding: "20px"}}>
+          <Link to='/'>Home</Link>
+          <Link to="/CreateAccount/">Create Account</Link>
+          <Link to="/CreateAccount/">Create Account</Link>
           <Route path="/" exact component={Home} />
           <Route path="/CreateAccount/" component={CreateAccount} />
           <Route path="/login/" component={Login} />
@@ -12,7 +24,7 @@ function Spa() {
           <Route path="/balance/" component={Balance} />
           <Route path="/alldata/" component={AllData} />
         </div>
-      </UserContext.Provider>      
+       
     </HashRouter>
   );
 }
