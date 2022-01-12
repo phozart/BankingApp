@@ -1,0 +1,7 @@
+MIT license
+Application build as part of the MIT xPRO full stack developer course.
+Banking app is build with REACT components. it contains option to create accounts, withdraw or deposit money and to review data.
+The deposit or withdraw only works on the first account (default account) that's added.
+Data is stored locally and will be overwritten on refresh.
+No user login is implemented yet.
+Field validations are implemented on the different forms and bootstrap is used for formatting.
