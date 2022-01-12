@@ -1,0 +1,8 @@
+.nav-link:hover{
+    background-color: lightslategray;
+    color: darkgray;
+}
+.active {
+    background-color: lightskyblue;
+    
+}
